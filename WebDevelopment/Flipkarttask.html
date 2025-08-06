@@ -1,0 +1,303 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .parent{
+                width:100%;
+                background-color: white;
+            }
+            .nav{
+                width: 100%;
+                height: 60px;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 5px 10px white;
+            }
+            .back{
+                width:100%;
+                height: 600px;
+                margin-top: 15px;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: 1fr;
+            }
+            .a{
+                display: grid;
+                grid-template-rows: 1fr 2fr 2fr;
+                grid-template-columns: 1fr;
+            }
+            .b{
+                margin-left: 10px;
+                display: grid;
+                grid-template-rows: 1fr 2fr 2fr;
+                grid-template-columns: 1fr;
+            }
+            .c{
+                margin-left: 10px;
+                
+            }
+            .nav img{
+                height: 60px;
+            }
+            .nav .search{
+                width:50%;
+                height: 30px;
+                background-color: aliceblue;
+            }
+            .i{
+                margin-top: 10px;
+                font-size: 15px;
+                margin-left: 10px;
+                color: grey;
+            }
+            .i1,.i2,.i3,.i4{
+                margin-left: 25px;
+            }
+            .i1 select{
+                border-style: none;
+            }
+            .bar{
+                display: none;
+            }
+            .mobile{
+                display: none;
+            }
+            .a1{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .a2{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 1fr;
+            }
+            .a3{
+                margin-top: 15px;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 1fr;
+            }
+            .a1 p{
+                margin-left: 10px;
+                margin-right: 10px;
+                font-weight: bold;
+            }
+            .a21{
+                background-color: whitesmoke;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .a22{
+                background-color: whitesmoke;
+                margin-left: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .a31{
+                background-color: whitesmoke;
+                margin-left: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .a32{
+                 background-color: whitesmoke;
+                margin-left: 10px;
+                 display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .a21 img{
+                width: 50%;
+                height: 150px;
+            }
+            .p1,.p2,.p3,.p4{
+                margin-top: -10px;
+                color: rgb(6, 132, 6);
+                font-weight: bold;
+            }
+            .a22 img{
+                width: 50%;
+                height: 150px;
+            }
+            .a31 img{
+                width: 50%;
+                height: 150px;
+            }
+            .a32 img{
+                width: 50%;
+                height: 150px;
+            }
+            /* .c img{
+                width: 100%;
+                height: 100%;
+            } */
+            @media (max-width:866px){
+                .i{
+                    font-size: 10px;
+                }
+                 .i1,.i2,.i3,.i4{
+                    margin-left: 15px;
+                    font-size: smaller;
+                }
+            }
+            @media (max-width:766px) {
+                .search,.i4,.i3{
+                    display: none;
+                }
+            }
+            .c img{
+                width: 100%;
+                height: 100%;
+            }
+            .contentt h1{
+                margin-top: -550px;
+                color: purple;
+                margin-left: 10px;
+            }
+            .contentt p{
+                margin-left: 10px;
+            }
+            .contentt button{
+                margin-left: 10px;
+                background-color: palevioletred;
+                border-style: none;
+            }
+            @media(max-width:426px){
+                .back{
+                    display: grid;
+                    grid-template-rows: repeat(3,1fr);
+                    grid-template-columns: 1fr;
+                }
+                .b,.c{
+                    margin-left: 0px;
+                    margin-top: 10px;
+                }
+                .bar{
+                    display: block;
+                }
+                .mobile{
+                    display: block;
+                }
+                .a2{
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr ;
+                }
+                .a22{
+                    margin-top: 10px;
+                }
+                .a32{
+                    margin-top: 10px;
+                }
+                .a3{
+                margin-top: 20px;
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr ;
+                }
+                .contentt h1{
+                    margin-top: -380px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="nav">
+                <div class="bar"><i class="fa-solid fa-bars"></i></div>
+                <img src="../flipkart">
+                <div class="search">
+                    <div class="i"><i class="fa-solid fa-magnifying-glass"></i> Search for Products, Brands and More</div>
+                </div>
+                <div class="mobile"><i class="fa-solid fa-mobile-screen"></i></div>
+                  <div class="i1"><i class="fa-regular fa-circle-user"></i> Login <select></select></div>
+                  <div class="i2"><i class="fa-solid fa-cart-shopping"></i> Cart</div>
+                  <div class="i3"><i class="fa-solid fa-store"></i> Store</div>
+                  <div class="i4"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+            <div class="back">
+                <div class="a">
+                    <div class="a1"> 
+                        <p>Hair & Skin Care for Monsson</p>
+                        <p class="ii"><i class="fa-solid fa-circle-chevron-right"></i></p>
+                    </div>
+                    
+                    <div class="a2">
+                        <div class="a21">
+                            <img src="../facewash.jpg">
+                            <p>Face Wash</p>
+                            <p class="p1">Min. 50% Off</p>
+                        </div>
+                        <div class="a22">
+                            <img src="../hair.jpeg">
+                            <p>Hair Serum</p>
+                            <p class="p2">Min. 50% Off</p>
+                        </div>
+                    </div>
+                    <div class="a3">
+                        <div class="a31">
+                            <img src="../hair claw.jpg">
+                            <p>Hair Claw</p>
+                            <p class="p3">Top Sellers</p>
+                        </div>
+                        <div class="a32">
+                             <img src="../soa.jpeg">
+                            <p>Bath Soap</p>
+                            <p class="p4">Min. 50% Off</p>
+                        </div>
+                           
+                    </div>
+                </div>
+                <div class="b">
+                    <div class="a1"> 
+                        <p>Fashion's Top Deals</p>
+                        <p class="ii"><i class="fa-solid fa-circle-chevron-right"></i></p>
+                    </div>
+                    <div class="a2">
+                        <div class="a21">
+                            <img src="../slippers.jpeg">
+                            <p>Slippers</p>
+                            <p class="p1">Min. 70% Off</p>
+                        </div>
+                        <div class="a22">
+                            <img src="../tshirt.jpeg">
+                            <p>Men's Tshirts</p>
+                            <p class="p2">Min. 50% Off</p>
+                        </div>
+                    </div>
+                    <div class="a3">
+                        <div class="a31">
+                            <img src="../casual.jpeg">
+                            <p>Casual Shirts</p>
+                            <p class="p3">Special Offer</p>
+                        </div>
+                        <div class="a32">
+                             <img src="../sarees.jpeg">
+                            <p>Women's Sarees</p>
+                            <p class="p4">Special offer</p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="contentt">
+                        <img src="../backgroundflipkart.jpeg">
+                        <h1>Shop you <br> fashion Needs</h1>
+                        <p>with Latest & <br> Trendy Choices</p>
+                        <button type="button">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+       <title>DOM</title>   
+       <style>
+            .parent{
+                position: relative;
+            }
+            .child{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: rgb(38, 146, 240);
+                margin-left: 600px; 
+                margin-top: 300px;
+            }
+            
+       </style> 
+    </head>
+    <body>
+        <div class="parent">
+             <div class="child"></div>
+        </div>
+        <button onclick="top1()">Top</button>
+        <button onclick="left1()">Left</button>
+        <button onclick="bottom1()">Bottom</button>
+        <button onclick="right1()">Right</button>
+        <script>
+            function top1(){
+                document.getElementsByClassName("child")[0].style="top:-100px"
+            }
+            function left1(){
+                document.getElementsByClassName("child")[0].style="left:-100px"
+            }
+            function bottom1(){
+                document.getElementsByClassName("child")[0].style="top:100px"
+            }
+            function right1(){
+                document.getElementsByClassName("child")[0].style="right:100px"
+            }
+        </script>
+    </body>
+</html>

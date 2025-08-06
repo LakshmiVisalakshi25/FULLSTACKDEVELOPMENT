@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            div{
+                width:252px;
+                height: 250px;
+                border:1px solid black;
+            }
+            button{
+                width:60px;
+                height:50px
+            }
+            input{
+                width:188px;
+                height:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <input type="text" id="display">
+<button  onclick="sample()">C</button>
+
+
+            <button onclick="fun('1')">1</button>
+            <button onclick="fun('2')">2</button>
+            <button onclick="fun('3')">3</button>
+            <button onclick="fun('4')">4</button>
+            <button onclick="fun('5')">5</button>
+            <button onclick="fun('6')">6</button>
+            <button onclick="fun('7')">7</button>
+            <button onclick="fun('8')">8</button>
+            <button onclick="fun('9')">9</button>
+            <button onclick="fun('0')">0</button>
+            <button onclick="fun('+')">+</button>
+            <button onclick="fun('-')">-</button>
+            <button onclick="fun('*')">*</button>
+            <button onclick="fun('/')">/</button>
+            <button onclick="calculate()">=</button>
+            <button type="button" onclick="fun('.')">.</button>
+            
+        </div>
+        <script>
+          function sample(){
+            document.getElementById("display").value=""
+        }
+                function fun(num){
+                    document.getElementById("display").value+=num
+                }
+                function calculate(){
+            var res = eval(document.getElementById('display').value);
+            document.getElementById('display').value = res;
+        }
+        document.addEventListener("keydown", function(event) {
+            const key = event.key;
+            const validKeys = "0123456789+-*/.";
+
+            if (validKeys.includes(key)) {
+                fun(key);
+            } else if (key === "Enter") {
+                calculate();
+            } else if (key === "Escape" || key === "Backspace") {
+                sample();
+            }
+        });
+        </script>
+    </body>
+</html>

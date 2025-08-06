@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            .a p{
+                color:aqua;
+            }
+            .b >p{
+                color:violet;
+            }
+            /* div +p{
+                color:blue
+            } */
+            div ~p{
+                color:brown
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <!--Space Selector-->
+        <h1>Hello World</h1>
+        <div class="a">
+            <p>Level -1 child1</p>
+            <p>Level -1 child2</p>
+            <div>
+                <p>Level -2 child1</p>
+                <p>Level-2 child2</p>
+            </div>
+            <p>Level -1 child3</p>
+        </div>
+        <h1>THUB</h1>
+        <hr>
+        <!--Greater than operator-->
+        <h1>Hello World</h1>
+        <div class="b">
+            <p>Level -1 child1</p>
+            <p>Level -1 child2</p>
+            <div>
+                <p>Level -2 child1</p>
+                <p>Level -2 child2</p>
+            </div>
+            <p>Level -1 child3</p>
+        </div>
+        <h1>THUB</h1>
+        <hr>
+        <!--+ operator-->
+        <!-- <h1>Hello World</h1>
+        <div>hello1</div>
+        <p>Level -1 child1</p>
+        <p>Level -2 child1</p>
+        <p>Level -2 child2</p>
+        <div>Hello</div>
+        <p>Level -1 child3</p>
+        <h1>THUB</h1>
+        <hr> -->
+        <!--Tilt symbol(~)-->
+        <h1>Hello World</h1>
+        <div>hello1</div>
+        <p>Level -1 child1</p>
+        <p>Level -2 child1</p>
+        <p>Level -2 child2</p>
+        <div>Hello</div>
+        <p>Level -1 child3</p>
+        <h1>THUB</h1>
+    </body>
+</html>

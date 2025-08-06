@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            var d={};
+            d['asha']=55;
+            d['harini']=25;
+            d['ankitha']=28;
+            d['vaishu']=44;
+            console.log(d);
+            console.log(Object.keys(d));
+            console.log(Object.values(d));
+            console.log(Object.entries(d));
+            Object.entries(d).map(ele=>{
+                console.log(ele);
+            })
+            Object.entries(d).map(ele=>{
+                console.log("Index: ",ele[0],"Element: ",ele[1]);
+            })
+            delete d['vaishu'];
+            console.log(d);
+        </script>
+    </head>
+</html>

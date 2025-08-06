@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .demo{
+                z-index: 1;
+                border: 1px solid black;
+                background-color: black;
+                color:white;
+                position: relative;
+                padding: 20px;
+                border-radius: 30px;
+            }
+            .demo::after{
+                z-index: -1;
+                position: absolute;
+                content:"";
+                width:45px;
+                height: 45px;
+                background-color: rgb(112, 107, 107);
+                border-radius: 50px;
+                transform: translateX(0px) translateY(10px);
+                transition: transform 2s linear;
+            }
+            .demo:hover::after{
+                width:80%;
+                height: 80%;
+                transform: translateX(-70px) translateY(-15px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="demo">Click Me</div>
+    </body>
+</html>

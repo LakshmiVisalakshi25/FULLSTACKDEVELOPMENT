@@ -1,0 +1,49 @@
+.parent{
+    width:320px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+    border-radius: 20px;
+}
+.child1{
+    width:260px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top:50px;
+    left:30px;
+    border-radius: 10px;
+}
+.child2{
+    width:280px;
+    height:200px;
+    background-color: black;
+    position: absolute;
+    top:160px;
+    left: 30px;
+     display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.child{
+    width:40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+button{
+    width:40px;
+    height: 40px;
+    background-color: white;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+p{
+    color:black;
+    font-style: 'Segment7Standard', monospace;
+    margin-left: 230px;
+    font-size: 30px;
+}

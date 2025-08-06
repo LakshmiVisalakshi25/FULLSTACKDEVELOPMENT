@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                perspective: 1000px;
+                background-color: rgba(111, 113, 114, 0.92);
+            }
+            @keyframes myanimation {
+                100%{
+                    transform: rotateX(360deg) rotateY(360deg);
+                }
+            }
+            .cube{
+                width:300px;
+                height: 300px;
+                /* border:1px solid aqua; */
+                animation: myanimation 5s infinite linear;
+                position: relative;
+                transform-style: preserve-3d;
+            }
+            #side{
+                position: absolute;
+                width:300px;
+                height: 300px;
+                /* background-color: rgb(154, 238, 238); */
+                border: 1px solid black;
+                opacity: 0.7;
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .left{
+                transform: rotateY(90deg) translateZ(150px);
+                background-color: red;
+                 /* display:grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr; */
+                opacity: 2.5;
+            }
+            .right{
+                transform: rotateY(90deg) translateZ(-150px);
+                background-color: green;
+                 /* display:grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr; */
+            }
+            .top{
+                transform: rotateX(90deg) translateZ(150px);
+                background-color: blue;
+            }
+            .bottom{
+                transform: rotateX(-90deg) translateZ(150px);
+                background-color: white;
+            }
+            .front{
+                transform: translateZ(-150px);
+                background-color: yellow;
+            }
+            .back{
+                transform: translateZ(150px);
+                background-color: orange;
+            }
+            .block1{
+                /* width:98px;
+                height: 98px; */
+                border: 1px solid black;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="cube">
+            <div class="left" id="side">
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+            </div>
+            <div class="right" id="side">
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+            </div>
+            <div class="top" id="side">
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+            </div>
+            <div class="bottom" id="side">
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+            </div>
+            <div class="front" id="side">
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+            </div>
+            <div class="back" id="side">
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+                <div class="block1"></div>
+            </div>
+        </div>
+    </body>
+</html>

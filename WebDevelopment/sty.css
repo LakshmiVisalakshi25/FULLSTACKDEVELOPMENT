@@ -1,0 +1,89 @@
+.rectangle{
+    width:400px;
+    height:250px;
+    border:1px solid black;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    top:80px;
+    left:450px;
+}
+h4{
+    position: absolute;
+    left:20px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size: larger;
+    font-weight:400;
+}
+img{
+    width: 45px;
+    height:40px;
+    background-color: grey;
+    position: absolute;
+    top:80px;
+    left:40px;
+    border-radius: 5px;
+}
+.c{
+    position: absolute;
+    top:120px;
+    left:20px;
+    font-weight:400;
+}
+p{
+    position: relative;
+    top:161px;
+     left:20px;
+    color:white;
+    font-weight: lighter;
+    font-size: xx-small;
+}
+.d{
+    position: absolute;
+    top:154px;
+      left:20px;
+    color:white;
+    font-weight:400;
+}
+.e{
+    position: absolute;
+    top:174px;
+      left:20px;
+    color: white;
+    font-weight:400;
+}
+.circle{
+    width:50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top:175px;
+    left:280px;
+    border-radius: 50px;
+    z-index: 1;
+    opacity: 0.5;
+}
+.circle1{
+    width:50px;
+    height: 50px;
+    background-color: rgb(255, 166, 0);
+    position: absolute;
+    top:175px;
+    left:310px;
+    border-radius: 50px;
+}
+.s{
+    position: absolute;
+    top:220px;
+    left: 300px;
+    color: white;
+    letter-spacing: 1px;
+}
+.i{
+    position: absolute;
+    left:310px;
+    top:20px;
+    border-radius: 100px;
+}

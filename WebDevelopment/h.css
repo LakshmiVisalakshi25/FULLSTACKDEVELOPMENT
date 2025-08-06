@@ -1,0 +1,51 @@
+.parent{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+img{
+    width:200px;
+}
+.a{
+    width: 100px;
+}
+.b{
+    width: 500px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.c{
+    display: flex;
+    align-items: center;
+}
+button{
+    margin-left: 250px;
+    background-color: green;
+    align-items: center;
+}
+.d{
+    display: none;
+    margin-left: 50px;
+    padding: 30px;
+}
+@media (max-width:780px){
+    .d{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+}
+.d1{
+    border: 1px solid black;
+    display: none;
+}
+.submenu{
+    border: 1px solid black;
+}
+.d:hover .d1{
+    display: block;
+}

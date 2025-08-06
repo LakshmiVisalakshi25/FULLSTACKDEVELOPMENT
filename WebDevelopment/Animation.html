@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <style>
+            .a{
+                width:100px;
+                height: 50px;
+                animation-name: demo;
+                animation-duration: 2s;
+                background-color: black;
+            }
+            .b{
+                width:100px;
+                height: 50px;
+                animation-name: demo1;
+                animation-duration: 2s;
+                animation-iteration-count: infinite; 
+                /* animation-timing-function: ease-in;
+                animation-direction: alternate; */
+                /* animation: demo1 2s ease-in-out 1s infinite alternate; */
+                background-color: black;
+                position: relative;
+            }
+            .c{
+                width:100px;
+                height: 50px;
+                animation-name: demo2;
+                animation-duration: 15s;
+                background-color: black;
+            }
+            @keyframes demo {
+                from{
+                    background-color: black;
+                }
+                to{
+                    background-color: blueviolet;
+                }
+            }
+            @keyframes demo1 {
+                from{
+                    background-color: black;
+                    left:0px;
+                }
+                to{
+                    background-color: blueviolet;
+                    left:300px;
+                }
+            }
+            @keyframes demo2 {
+                0%{
+                    background-color: aqua;
+                }
+                20%{
+                    background-color: blue;
+                }
+                100%{
+                    background-color: palevioletred;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a"></div><br>
+        <div class="b"></div><br>
+        <div class="c"></div>
+    </body>
+</html>

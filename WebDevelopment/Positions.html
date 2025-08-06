@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <style>
+            .parent{
+                width:100%;
+                height:50%;
+                border: 1px solid black;
+                background-color: aqua;
+            }
+            .child{
+                width:10%;
+                height: 30%;
+                border: 1px solid black;
+                background-color: black;
+                /* position: relative;
+                top:50px;
+                left:80px;
+                bottom: 20px; */
+            }
+            .parent1{
+                width:100%;
+                height:50%;
+                border: 1px solid black;
+                background-color: rgb(238, 88, 183);
+                /* position: relative; */
+            }
+            .child1{
+                width:10%;
+                height: 30%;
+                border: 1px solid black;
+                background-color: blue;
+            }
+            .child2{
+                width:10%;
+                height: 30%;
+                border: 1px solid black;
+                background-color: rgb(222, 245, 110);
+                position: absolute;
+                top:20px;
+                left:50px;
+                /* right:0px;
+                bottom: 0px; */
+            }
+            .child3{
+                width:10%;
+                height: 30%;
+                border: 1px solid black;
+                background-color: rgb(135, 240, 163);
+            }
+            .parent2{
+                width:100%;
+                height:50%;
+                border: 1px solid black;
+                background-color: rgb(235, 200, 222);
+            }
+            .child4{
+                width:10%;
+                height: 30%;
+                border: 1px solid black;
+                background-color: rgb(233, 135, 66);
+                position: fixed;
+                bottom:50px;
+                right:10px 
+            }
+            .parent3{
+                width:100%;
+                height:10%;
+                border: 1px solid black;
+                background-color: rgb(42, 246, 6);
+                position: sticky;
+                top:50px;
+            }
+            .parent4{
+                width:100%;
+                height:50%;
+                border: 1px solid black;
+                background-color: rgb(235, 11, 11);
+            }
+        </style>
+    </head>
+    <body>
+        <!--Relative-->
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+        <!--Absolute-->
+        <div class="parent1">
+            <div class="child1"></div>
+            <div class="child2"></div>
+            <div class="child3"></div>
+        </div>
+        <!--Sticky-->
+        <div class="parent3"></div>
+        <!--Fixed-->
+        <div class="parent2">
+            <div class="child4"></div>
+        </div>
+        <div class="parent4"></div>
+    </body>
+</html>

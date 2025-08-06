@@ -1,0 +1,276 @@
+.background{
+    width:1250px;
+    height:570px;
+    border: 1px ;
+}
+.background1{
+    width:1250px;
+    height:285px;
+    border: 1px ;
+    background-image: linear-gradient(rgb(142, 216, 241),white);
+    position: relative;
+    animation-name: change1;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+.sun{
+    width:100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50px;
+    position: absolute;
+    left:1000px;
+    animation-name: change2;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    z-index: 1;
+}
+.tree{
+    width:20px;
+    height:85px;
+    border:1px solid black;
+    background-color: brown;
+    position: absolute;
+    top:200px;
+    left:100px;
+}
+.leaf1{
+    width:50px;
+    height: 50px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:200px;
+    left:105px
+}
+.leaf2{
+     width:50px;
+    height: 50px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:200px;
+    left:60px
+}
+.leaf3{
+     width:50px;
+    height: 50px;
+   border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:160px;
+    left:70px;
+}
+.leaf4{
+     width:50px;
+    height: 50px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:160px;
+    left:100px;
+}
+.leaf5{
+     width:50px;
+    height: 50px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:180px;
+    left:80px;
+    z-index:1
+}
+.leaf6{
+    width:50px;
+    height: 50px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:160px;
+    left:50px;
+}
+.leaf7{
+    width:50px;
+    height: 50px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:125px;
+    left:75px;
+}
+.tree1{
+    width:20px;
+    height:85px;
+    border:1px solid black;
+    background-color: brown;
+    position: absolute;
+    top:200px;
+    left:300px;
+}
+.leaf11{
+    width:50px;
+    height: 50px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:200px;
+    left:310px
+}
+.leaf21{
+     width:50px;
+    height: 50px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:200px;
+    left:260px
+}
+.leaf31{
+     width:50px;
+    height: 50px;
+   border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:160px;
+    left:250px;
+}
+.leaf41{
+     width:50px;
+    height: 50px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:160px;
+    left:310px;
+}
+.leaf51{
+     width:50px;
+    height: 50px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:180px;
+    left:280px;
+    z-index:1
+}
+.leaf61{
+    width:50px;
+    height: 50px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    top:130px;
+    left:280px;
+}
+.background2{
+    width:1250px;
+    height: 240px;
+    background-color: black;
+    z-index: 1;
+    position: relative;
+}
+.white{
+    width:200px;
+    height:10px;
+    background-color: white;
+    position: absolute;
+    top:120px;
+    left:30px
+}
+
+.white3{
+    width:200px;
+    height:10px;
+    background-color: white;
+    position: absolute;
+    top:120px;
+    left:300px
+}
+.white7{
+    width:200px;
+    height:10px;
+    background-color: white;
+    position: absolute;
+    top:120px;
+    left:570px
+}
+.white11{
+    width:200px;
+    height:10px;
+    background-color: white;
+    position: absolute;
+    top:120px;
+    left:840px
+}
+.image{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left:1000px;
+    top:50px;
+    animation-name: move;
+    animation-direction: alternate;
+    animation-duration: 10s;
+}
+img{
+    width: 200px;
+    height: 100px;
+}
+@keyframes move {
+    from {
+        left:1000px;
+    }
+    to{
+        left:-10px;
+    }
+}
+@keyframes change1 {
+    from{
+        background-image: linear-gradient(rgb(180, 223, 237),white);
+    }
+    to{
+        background-image: linear-gradient(black,black);
+    }
+}
+@keyframes change2{
+    from{
+        background-color: yellow;
+    }
+    to{
+        background-color: white;
+    }
+}
+.bird1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation-name: change3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.s{
+    width: 100px;
+    height: 100px;
+}
+@keyframes change3{
+    from{
+        left:0px
+    }
+    to{
+        left:600px;
+    }
+}

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+        <p>This is first Paragraph</p>
+        <p>This is Second Paragraph</p>
+        <div class="a">This is first div</div>
+        <div class="a">This is second div</div>
+        <span id="b">Span-Tag</span>
+        <script>
+            console.log(document.getElementsByTagName("p"));
+            console.log(document.getElementsByClassName("a"));
+            console.log(document.getElementById("b"));
+            console.log(document.getElementById("b").innerHTML);
+            console.log(document.getElementsByTagName("p")[0].innerHTML)
+            console.log(document.getElementsByClassName("a")[0].innerHTML);
+            document.getElementsByTagName("p")[0].innerText="Hello";
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100svh;
+            }
+            .demo{
+                position: relative;
+                /* width:100px;
+                height:50px; */
+                /* display: flex;
+                justify-content: center;
+                align-items: center; */
+                /* padding: 20px; */
+                border:1px solid black;
+                overflow: hidden;
+                z-index: 1;
+            }
+            .demo::before{
+                z-index: -1;
+                content:"";
+                position: absolute;
+                width:100%;
+                height: 100%;
+                background-color: green;
+                transform: translateX(60px) skew(45deg);
+                transition: transform 2s linear;
+            }
+            .demo::after{
+                z-index: -1;
+                content:"";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(241, 67, 189);
+                transform: translateX(-120px) skew(45deg);
+                transition: transform 2s linear;
+            }
+            .demo:hover::before{
+                transform: translateX(30px) skew(45deg);
+            }
+            .demo:hover::after{
+                transform: translateX(-85px) skew(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="demo">Click me</div>
+    </body>
+</html>

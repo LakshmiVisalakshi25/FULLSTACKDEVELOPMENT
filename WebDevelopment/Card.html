@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .front{
+                width:200px;
+                height: 200px;
+                background-color: aqua;
+                position: absolute;
+                top:0px;
+                backface-visibility: hidden;
+            }
+            .back{
+                width:200px;
+                height: 200px;
+                background-color: antiquewhite;
+                position: absolute;
+                top:0px;
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+            }
+            .parent{
+                /* display: flex;
+                justify-content: center;
+                align-items: center; */
+                position: relative;
+                transform-style: preserve-3d;
+                width:200px;
+                height: 200px;
+                transition: transform 1s linear;
+            }
+            .grandparent{
+                perspective: 200px;
+            }
+            .parent:hover{
+                transform: rotateY(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grandparent">
+        <div class="parent">
+        <div class="front">
+            Technical Hub
+        </div>
+        <div class="back">
+            Surampalem
+        </div>
+        </div>
+        </div>
+    </body>
+</html>

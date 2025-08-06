@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height:100svh;
+            }
+            .demo{
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+            }
+            .demo::before{
+                position: absolute;
+                z-index: -1;
+                content:"";
+                width:100%;
+                height: 100%;
+                background:linear-gradient(to right,rgb(118, 118, 237),rgb(241, 131, 131));
+                border-radius: 20px;
+                transform: translateX(-80px);
+                transition: transform 2s linear;
+            }
+            .demo:hover::before{
+                transform: translateX(0px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="demo">Click Me</div>
+    </body>
+</html>

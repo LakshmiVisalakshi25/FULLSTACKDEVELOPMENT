@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Path Explorer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1e1e2f;
+      padding: 12px 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .logo img {
+      width: 35px;
+      height: 35px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-link {
+      padding: 5px;
+      color: #f8f3f3;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .nav-item:hover .dropdown,
+    .profile:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #f5f6f8;
+      border: 1px solid #ad9a9a;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+      min-width: 200px;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px 20px;
+      white-space: nowrap;
+      text-decoration: none;
+      color: #333;
+      transition: background 0.3s;
+    }
+
+    .dropdown a:hover {
+      background-color: #687a91;
+    }
+
+    .dropdown a:active {
+      background-color: #ddd;
+    }
+
+    .profile {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .profile img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+
+    .profile .dropdown {
+      right: 0;
+      left: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/128/9552/9552379.png" alt="Logo Icon" />
+      Career Path Explorer
+    </div>
+
+    <div class="nav">
+      <div class="nav-item">
+        <div class="nav-link">HOME
+        <div class="dropdown">
+          <a href="introduction.html">Introduction</a>
+          <a href="overview.html">Explore Career Paths</a>
+          <a href="quick-guide.html">Quick Guide</a>
+          <a href="important-dates.html">Important Dates</a>
+          <a href="courses-list.html">Courses List</a>
+          <a href="popular-careers.html">Popular Careers</a>
+          <a href="start-here.html">Start Here</a>
+          <a href="contact.html">Help / Contact Us</a>
+  </div>
+</div>
+
+      </div>
+
+      <div class="nav-item">
+        <div class="nav-link">ABOUT</div>
+        <div class="dropdown">
+          <a href="about_us.html" target="_blank">About Us</a>
+          <a href="about-website.html" target="_blank">About the Website</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <div class="nav-link">EXPLORE CAREERS</div>
+        <div class="dropdown">
+          <a href="after_10.html">After 10th</a>
+          <a href="after_12.html">After 12th</a>
+          <a href="after_btech.html">After Graduation</a>
+
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <div class="nav-link">TOOLS</div>
+        <div class="dropdown">
+          <a href="#">Career Quiz</a>
+          <a href="#">Resume Builder</a>
+          <a href="#">College Finder</a>
+          <a href="job_trends.html">Job Trends</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Icon" />
+      <div class="dropdown">
+        <a href="#">Edit Profile</a>
+        <a href="#">Reset Password</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+.a{
+    width:380px;
+    height: 300px;
+    border: 1px solid azure;
+    position: relative;
+    top:50px;
+    left:480px;
+    border-radius: 30px;
+    background-color: rgb(244, 189, 237);
+    box-shadow: 10px 10px 10px  rgb(253, 224, 224);
+    background: linear-gradient(to right, rgb(160, 160, 242), #feb47b);
+}
+img{
+    position: absolute;
+    top:10px;
+    left:140px;
+    border-radius: 500px;
+    width: 80px;
+    height: 80px;
+}
+.f{
+     font-family: "Oleo Script", system-ui;
+     font-weight: 700;
+  font-style: normal;
+     position: absolute;
+     top:85px;
+     left:75px;
+     color: rgb(3, 95, 95);
+}
+.f1{
+     font-family: "Ballet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+     position: absolute;
+     top:103px;
+     left:95px;
+     color: rgba(148, 37, 246, 0.968);
+}
+.c{
+    position: absolute;
+    top:130px;
+    left: 20px;
+     font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+     color:purple
+}
+.d1{
+    position: absolute;
+    top:154px;
+    left: 20px;
+    font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+     color:rgb(39, 7, 250)
+}
+.d{
+    position: absolute;
+    top:178px;
+    left: 20px;
+    font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    color:rgb(243, 18, 157);
+}
+.e{
+    position: absolute;
+    top:205px;
+    left: 20px;
+    font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+     color:green
+}
+.b{
+    position: absolute;
+    top:220px;
+    left:70px;
+    font-size: 30px;
+    color:black;
+}
+.b1{
+    position: absolute;
+    top:220px;
+    left:160px;
+    font-size: 30px;
+    color:black;
+}
+.b2{
+    position: absolute;
+    top:220px;
+    left:250px;
+    font-size: 30px;
+    color:black;
+}

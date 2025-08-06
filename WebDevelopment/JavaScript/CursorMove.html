@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            .a{
+                width:40px;
+                height: 40px;
+                border-radius: 50px;
+                border: 1px solid white;
+                position: absolute;
+            }
+            /* .b{
+                width: 10px;
+                height: 10px;
+                border-radius: 10px;
+                border: 1px solid white;
+                position: absolute;
+                left:22px;
+                top:22px;
+                background-color: white;
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="a" onmousemove="MOVE()">
+        </div>
+        <script>
+            function MOVE(){
+                document.getElementsByClassName("a")[0].style="";
+            }
+        </script>
+    </body>
+</html>
