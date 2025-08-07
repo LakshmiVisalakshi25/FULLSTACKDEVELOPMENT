@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // default parameters
+        function fun1(a=10)
+        {
+            console.log(a);
+        }
+        fun1()
+
+
+        // Arrow Functions
+        // let Fun = (a,b) => {
+        //     console.log(a+b);
+        // }
+
+         let Fun = (a,b) => console.log(a+b)  // it body is return a single line of code
+        Fun(2,3)
+
+
+        // Destructuring
+
+        // objects 
+        var a = {
+            "name":"asha",
+            "gender" :"female"
+        }
+
+        const {name,gender} = a;
+        console.log(name,gender)
+
+
+        // arrays 
+        var b = [10,20,30]
+        const [c,d,e] = b
+        console.log(c,d,e)
+
+
+        // Spread Operator
+
+        //arrays
+
+        var arr1 = [1,2,3]
+        var arr2 = [4,5]
+        var arr3 = [...arr1,...arr2]
+        console.log(...arr1)
+        console.log(arr3)
+
+        //objects
+
+        var obj = {
+            "name":"kashvi",
+            "gender":"female"
+        }
+
+        var newobj = Object.entries(obj)
+        console.log(...newobj)
+
+
+
+
+    </script>
+</body>
+</html>
