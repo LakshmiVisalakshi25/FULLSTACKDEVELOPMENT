@@ -1,0 +1,21 @@
+.a{
+    width: 300px;
+    height: fit-content;
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding-top: 20px;
+}
+button{
+    margin-left: 20px;
+}
+.content{
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.c1{
+    width: 230px;
+    height: 30px;
+    border: 1px solid black;
+    margin-top:20px;
+    padding-top: 10px;
+}

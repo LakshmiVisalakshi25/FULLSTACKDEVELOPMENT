@@ -1,0 +1,16 @@
+.parent{
+    width: 100%;
+    display: flex;
+    gap:50px;
+}
+.Image img{
+    width: 50px
+}
+.Child{
+    width: fit-content;
+    /* height: 50px; */
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+
+}
